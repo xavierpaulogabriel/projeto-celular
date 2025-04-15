@@ -1,0 +1,239 @@
+/*FONTES*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background-principal{
+    background: linear-gradient(to bottom, #FE7002, #64018F);
+    height: 90vh;
+}
+
+/*I MENU*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background-principal {
+    background: linear-gradient(to bottom, #FE7002, #64018F);
+    height: 90vh;
+}
+
+/*I MENU*/
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 2%;
+    background-color: rgba(0, 0, 0, 0.2);
+    gap: 10px;
+}
+
+.logo {
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+}
+
+.menu {
+    flex: 2;
+    min-width: 200px;
+    text-align: center;
+    padding: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    margin: 15px;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover{
+    background-color: #64018F;
+    color: white;
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(100, 1, 143, 0.4);
+    padding: 12px 20px;
+    border-radius: 20px;
+}
+
+.login {
+    flex: 1;
+    min-width: 150px;
+    text-align: right;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.botao-login {
+    text-decoration: none;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    font-size: 18px;
+}
+
+.botao-login:hover{
+    background-color: #64018F;
+    color: white;
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(100, 1, 143, 0.4);
+    padding: 12px 20px;
+    border-radius: 20px;
+}
+
+.botao-inscrevase {
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 12px 20px;
+    border-radius: 25px;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    font-size: 18px;
+}
+
+.botao-inscrevase:hover{
+    background-color: #64018F;
+    color: white;
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(100, 1, 143, 0.4);
+    padding: 12px 20px;
+    border-radius: 20px;
+}
+/*F MENU*/
+
+/*I SECTION*/
+.container{
+    margin-top: 1%;
+    display: flex;
+    flex-flow: row wrap;
+    height: auto;
+}
+
+.texto-principal{
+    margin-left: 10%;
+    flex: 40%;
+}
+
+.texto-principal h2{
+    color: white;
+    letter-spacing: -2px;
+    font-size: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    margin-left: 20px;
+}
+
+.texto-principal p{
+    color: white;
+    padding-top: 5px;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 20px;
+}
+
+.texto-principal a{
+    text-decoration: none;
+    color: white;
+    background-color: #67038d;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 15px;
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    transition: all 0.3s ease;
+}
+
+.texto-principal a:hover{
+    background-color: #FE7002;
+    color: white;
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(254, 112, 2, 0.4);
+    padding: 12px 20px;
+    border-radius: 20px;
+}
+
+.img-principal{
+    margin-right: 10%;
+    flex: 40%;
+}
+
+.img-principal img{
+    max-width: 58.5%;
+    margin-left: 200px;
+}
+/*F TEXTO PRINCIPAL*/
+
+/*I TEXTO SECUNDARIO*/
+.texto-secundario h3{
+    margin-top: 15%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.texto-secundario span{
+    color: #FE7002;
+}
+
+.texto-secundario i{
+    color: white; 
+    padding-left: 5px;
+}
+
+.texto-secundario p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
