@@ -4,18 +4,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth@0,6..12,75..125;1,6..12,75..125&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth,wght@0,6..12,75..125,700;1,6..12,75..125,700&display=swap');
 
-
+/*I PÁGINA TODA*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+
+body{
+    background-color: #EEEEEE;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 .background-principal{
     background: linear-gradient(to bottom, #FE7002, #64018F);
     height: 90vh;
 }
+/*F PÁFINA TODA*/
 
 /*I MENU*/
 * {
@@ -27,17 +41,25 @@
 .background-principal {
     background: linear-gradient(to bottom, #FE7002, #64018F);
     height: 90vh;
+    padding-top: 100px; 
+    position: relative;
 }
 
 /*I MENU*/
 .navbar {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
-    padding: 1% 2%;
+    padding: 5px 2%;
     background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
     gap: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo {
@@ -141,13 +163,14 @@
 .container{
     margin-top: 1%;
     display: flex;
-    flex-flow: row wrap;
-    height: auto;
+    flex-flow: wrap;
+    align-items: center;
 }
 
 .texto-principal{
     margin-left: 10%;
-    flex: 40%;
+    flex: 1 1 40%;
+    min-width: 330px;
 }
 
 .texto-principal h2{
@@ -198,20 +221,23 @@
     border-radius: 20px;
 }
 
-.img-principal{
+.vid-principal{
     margin-right: 10%;
-    flex: 40%;
+    flex: 1 1 40%;
+    padding-left: 20px;
+    min-width: 330px;
 }
 
-.img-principal img{
-    max-width: 58.5%;
-    margin-left: 200px;
+.vid-principal iframe{
+    border-radius: 25px;
+    margin-top: 10%;
 }
+
 /*F TEXTO PRINCIPAL*/
 
-/*I TEXTO SECUNDARIO*/
+/*I TEXTO SECUNDÁRIO*/
 .texto-secundario h3{
-    margin-top: 15%;
+    margin-top: 11%;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -220,6 +246,7 @@
     font-size: 30px;
     margin-left: 20px;
 }
+
 
 .texto-secundario span{
     color: #FE7002;
@@ -236,4 +263,565 @@
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
+}
+/*F TEXTO SECUNDÁRIO*/
+
+/*I CARDS*/
+#cards{
+    scroll-margin-top: 100px;
+}
+
+.container-cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    margin-top: -70px;
+}
+
+.cards{
+    background: white;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon-falacomigo i{
+    color: #FE7003; 
+    font-size: 50px; 
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.cards h2{
+    color: #67038d;
+    padding-bottom: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.cards p{
+    color: #696984;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.icon-seminibicao i{
+    color: #67038D; 
+    font-size: 50px; 
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.icon-rotina-de-aprendizagem i{
+    color: #FBB927; 
+    padding-top: 10px;
+    font-size: 50px; 
+    padding-bottom: 18px;
+}
+/*F CARDS*/
+
+/*I SAIBA MAIS*/
+#quemsomos{
+    scroll-margin-top: 100px;
+}
+
+.container-saibamais{
+    margin-top: 3%;
+    display: flex;
+    flex-flow: row wrap;
+    height: auto;
+}
+
+.conteudo-saibamais{
+    margin-left: 10%;
+    flex: 40%;
+}
+
+.video-saibamais{
+    flex: 40%;
+    margin-right: 10%;
+}
+
+.conteudo-saibamais h3{
+    color: #552084;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.fundo-laranja{
+    background-color: #FE7003;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 25px;
+}
+
+.negrito-laranja{
+    color: #FE7002;
+}
+
+.conteudo-saibamais p{
+    color: #696984;
+    padding-top: 10px;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 10px;
+}
+
+.borda{
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+/*F SAIBA MAIS*/
+
+/*I TESTEMUNHO*/
+.container-testemunho{
+    margin-top: 3%;
+    display: flex;
+    flex-flow: row wrap;
+    height: auto;
+}
+
+.conteudo-testemunho{
+    margin-left: 10%;
+    flex: 40%;
+}
+
+.video-testemunho{
+    flex: 40%;
+    margin-right: 10%;
+}
+
+
+.texto-com-linha{
+    display: flex;
+    align-items: center;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #552084;
+    font-size: 20px;
+}
+
+.texto-com-linha span {
+    margin-left: 10px;
+  }
+
+.texto-com-linha .linha-roxa {
+    height: 2px;
+    background-color: purple;
+    width: 50px;      
+    margin-left: 10px;
+  }
+
+.conteudo-testemunho h3{
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    padding-top: 20px;
+    color: #E55E19;
+    margin-left: 10px;
+}
+
+.texto-testemunhosecundario{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #696984;
+}
+
+.texto-testemunho-terciario{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    margin-left: 10px;
+    color: #696984;
+}
+
+.texto-testemunho-quaternario{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    margin-left: 10px;
+    color: #696984;
+    margin-top: 10px;
+}
+
+.botao-vejamaisavaliacoes{
+    text-decoration: none;
+    margin-top: 15px;
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid #FE7002;
+    border-radius: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #FE7002;
+    font-size: 18px;
+}
+
+.botao-vejamaisavaliacoes:hover{
+    background-color: #64018F;
+    color: white;
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(100, 1, 143, 0.4);
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: none;
+}
+/*F SAIBA MAIS TESTEMUNHO*/
+
+/* I DEPOIMENTOS*/
+#depoimentos{
+    scroll-margin-top: 100px;
+}
+
+.container-depoimentos{
+    width: 100%;
+}
+
+.depoimentos h2{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 3%;
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #FE7002;
+}
+
+.depoimentos p{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #696984;
+    font-size: 18px;
+}
+
+.container-cards-depoimentos{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 3%;
+}
+
+.cards-depoimentos{
+    background: white;
+    width: 430px;
+    height: 330px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cards-depoimentos img{
+    border-radius: 100%;
+    width: 80px;
+    display: block;
+    margin: 20px auto;
+}
+
+.cards-depoimentos h2{
+    color: #552084;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.cards-depoimentos p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #696984;
+    font-size: 16px;
+}
+
+.estrelas{
+    padding-top: 10px;
+    color: #552084;
+}
+/*F DEPOIMENTOS*/
+
+/*I DUVIDAS*/
+.container-duvidas{
+    display: flex;
+}
+
+.duvidas{
+    margin-top: 3%;
+    flex: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 50px;
+    background-color: white;
+    color: #FE7003;
+    border-radius: 20px;
+}
+
+.duvidas p{
+    padding-left: 15px;
+    padding-top: 10px;
+    font-size: 22px;
+    text-align: center;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.duvidas:hover{
+    background-color: #64018F;
+    color: white;
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(100, 1, 143, 0.4);
+    border-radius: 25px;
+    border: none;
+}
+/*F DUVIDAS*/
+
+/*I FORMULARIO*/
+.container-formulario {
+    display: flex;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.formulario {
+    width: 100%; 
+    background-color: white;
+    border-radius: 30px;
+    padding-left: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.formulario h4{
+    color: #E55E19;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.formulario p{
+    margin-top: 10px;
+    color: #E55E19;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.formulario input{
+    width: 98%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #EEEE;
+    border-radius: 5px;
+    transition: 0.3s;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+input::placeholder{
+    color: #FE7003;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.campo-mensagem{
+    height: 100px;
+}
+
+.email, .nome, .campo-mensagem{
+    outline: none; 
+    background-color: #f2f2f2; 
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.email:focus, .nome:focus, .campo-mensagem:focus{
+    color: #64018F;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container-enviar{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #67038d;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 15px;
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    transition: all 0.3s ease;
+    justify-content: center;
+}
+
+.container-suamensagem{
+    text-align: center;
+}
+
+.container-suamensagem a{
+    text-decoration: none;
+    color: white;
+    background-color: #67038d;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 15px;
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    transition: all 0.3s ease;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.container-suamensagem a:hover{
+    background-color: #FE7002;
+    color: white;
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(254, 112, 2, 0.4);
+    border-radius: 25px;
+}
+/*F FORMULARIO*/
+
+/*I FOOTER*/
+.footer{
+    margin-top: 3%;
+    height: 55vh;
+    background-color: #FE7002;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.termosecondicoes a{
+    color: white;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.termosecondicoes{
+    color: #696984;
+}
+
+.termosecondicoes a:hover{
+    color: #552084;
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+}
+
+.reservado{
+    color: white;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.desenvolvido{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.desenvolvido a{
+    text-decoration: none;
+}
+
+.desenvolvido a:hover{
+    color: white;
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+}
+
+.redes p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.redes a{
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 25px;
+    padding-left: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.redes a:hover{
+    color: #552084;
+    transition: all 0.3s ease;
+    transform: scale(1.05);
 }
